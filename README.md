@@ -109,22 +109,7 @@ Make sure the following are installed on your system:
 
 To make API calls to the Flask backend:
 - Update the API base URL in the frontend project.
-- Create an `api` utility file (e.g., `utils/api.ts`) for making HTTP requests.
-
-Example `utils/api.ts`:
-```typescript
-const API_BASE_URL = "http://127.0.0.1:5000";
-
-export async function fetchExampleData() {
-  const response = await fetch(`${API_BASE_URL}/example`);
-  if (!response.ok) {
-    throw new Error("Failed to fetch data");
-  }
-  return response.json();
-}
-```
-
----
+- python3 app.py
 
 ## Running the Full Stack Project
 
